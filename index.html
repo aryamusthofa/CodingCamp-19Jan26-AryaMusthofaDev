@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List — The Switcher Edition</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">To-Do List</h1>
+    <div class="theme-wrap">
+      <label for="theme-select" class="theme-label">Theme</label>
+      <select id="theme-select" class="theme-select" aria-label="Choose theme">
+        <option value="minimalist">Minimalist</option>
+        <option value="cyberpunk">Cyberpunk</option>
+        <option value="dark">Dark</option>
+        <option value="light">Light</option>
+        <option value="rgb">RGB</option>
+        <option value="vintage">Vintage</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="card">
+    <form id="task-form" class="form">
+      <div class="form-row">
+        <input type="text" id="task-name" class="input" placeholder="Task name" autocomplete="off">
+        <input type="date" id="task-date" class="input input-date">
+        <button type="submit" class="btn btn-primary">Add</button>
+      </div>
+      <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+    </form>
+
+    <div class="controls">
+      <div class="filter-wrap">
+        <label for="filter-select" class="filter-label">Filter</label>
+        <select id="filter-select" class="filter-select">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+          <option value="due-date">Due Date</option>
+        </select>
+      </div>
+      <button type="button" id="delete-all" class="btn btn-danger">Delete All</button>
+    </div>
+
+    <ul id="task-list" class="task-list" aria-label="Task list"></ul>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
