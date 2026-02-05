@@ -1,5 +1,7 @@
 # To-Do List Web Application — "The Switcher Edition"
 
+**🌐 Bahasa Indonesia** · [English](README.en.md)
+
 A responsive, themeable to-do list app with CRUD, filters, and 6 visual themes. Built with vanilla HTML, CSS, and JavaScript. Data and theme preference persist in `localStorage`.
 
 ![App Preview](preview.jpg)
