@@ -1,6 +1,6 @@
 # To-Do List Web Application — "The Switcher Edition"
 
-**🌐 Bahasa Indonesia** · [English](README.en.md)
+**🌐 English** · [Bahasa Indonesia](README.id.md)
 
 A responsive, themeable to-do list app with CRUD, filters, and 6 visual themes. Built with vanilla HTML, CSS, and JavaScript. Data and theme preference persist in `localStorage`.
 
@@ -13,7 +13,7 @@ A responsive, themeable to-do list app with CRUD, filters, and 6 visual themes. 
 
 ## 📌 About This Project
 
-Ini adalah **To-Do List Web Application** dengan fokus pada **CRUD**, **filter task**, dan **multi-theme**. Semua logic dan style di-pack dalam 3 file saja (satu HTML, satu CSS, satu JS) sesuai constraint project. Tema bisa diganti kapan saja dan pilihan tema + daftar task tersimpan di browser (localStorage), jadi tetap ada setelah reload.
+This is a **To-Do List Web Application** focused on **CRUD**, **task filtering**, and **multi-theme** support. All logic and styles are packed into 3 files only (one HTML, one CSS, one JS) per project constraints. You can switch themes anytime; your theme choice and task list are saved in the browser (localStorage) and persist after reload.
 
 ---
 
@@ -21,67 +21,67 @@ Ini adalah **To-Do List Web Application** dengan fokus pada **CRUD**, **filter t
 
 | Feature | Description |
 |--------|-------------|
-| **Add Task** | Input nama task + due date (tanggal jatuh tempo). Validasi: nama wajib diisi (alert + pesan error di UI). |
-| **Display List** | Tiap task menampilkan: nama, due date, checkbox selesai, dan tombol hapus. |
-| **Mark Completed** | Centang checkbox → teks task dicoret (strikethrough). |
-| **Delete** | Hapus satu task atau **Delete All** (dengan konfirmasi). |
-| **Filter** | Dropdown: **All**, **Completed**, **Uncompleted**, **Due Date** (urut berdasarkan tanggal terdekat). |
-| **Theme Switcher** | 6 tema (dropdown di kanan atas). Pilihan tema disimpan di localStorage. |
-| **Responsive** | Layout card centered, nyaman di mobile dan desktop. |
+| **Add Task** | Enter task name and due date. Validation: name is required (alert + in-page error message if empty). |
+| **Display List** | Each task shows: name, due date, completion checkbox, and delete button. |
+| **Mark Completed** | Check the box → task text is struck through. |
+| **Delete** | Remove a single task or **Delete All** (with confirmation). |
+| **Filter** | Dropdown: **All**, **Completed**, **Uncompleted**, **Due Date** (sort by nearest date first). |
+| **Theme Switcher** | 6 themes (dropdown top right). Selection is saved in localStorage. |
+| **Responsive** | Centered card layout, works on mobile and desktop. |
 
 ---
 
 ## 🎨 Themes
 
-Semua tema diatur lewat **CSS Variables** dan atribut `data-theme` pada `<body>` di satu file `css/style.css`.
+All themes are controlled via **CSS Variables** and a `data-theme` attribute on `<body>` in a single `css/style.css` file.
 
-| Theme | Kesan |
+| Theme | Vibe |
 |-------|--------|
-| **Minimalist** (default) | Putih/abu-abu, font Inter, shadow halus. |
-| **Cyberpunk** | Background gelap, aksen neon pink/biru, efek glitch saat hover, font Courier. |
-| **Dark** | Abu-abu gelap, teks putih lembut, nyaman di mata. |
-| **Light** | Kontras tinggi: putih + hitam, border tegas. |
-| **RGB** | Border/gradient animasi, nuansa gaming. |
-| **Vintage** | Background sepia/beige, teks coklat, font serif/typewriter. |
+| **Minimalist** (default) | Clean white/gray, Inter font, subtle shadows. |
+| **Cyberpunk** | Dark background, neon pink/blue accents, glitch effect on hover, Courier font. |
+| **Dark** | Dark gray, soft white text, easy on the eyes. |
+| **Light** | High contrast white background, black text, sharp borders. |
+| **RGB** | Animated RGB borders/gradients, gaming feel. |
+| **Vintage** | Sepia/beige background, brown text, serif/typewriter font. |
 
 ![Theme Switcher](preview-themes.png)
-> *Theme dropdown — pilih salah satu dari 6 tema (Minimalist, Cyberpunk, Dark, Light, RGB, Vintage).*
+> *Theme dropdown — choose one of 6 themes (Minimalist, Cyberpunk, Dark, Light, RGB, Vintage).*
 
 ---
 
 ## 📋 Filter
 
-Dropdown filter untuk melihat task: **All**, **Completed**, **Uncompleted**, atau **Due Date** (urut berdasarkan tanggal terdekat).
+Filter dropdown to view tasks: **All**, **Completed**, **Uncompleted**, or **Due Date** (sorted by nearest date first).
 
 ![Filter](preview-filter.png)
-> *Filter dropdown — opsi Due Date mengurutkan task berdasarkan tanggal jatuh tempo.*
+> *Filter dropdown — Due Date option sorts tasks by due date.*
 
 ---
 
 ## 📅 Due Date (dd/mm/yyyy)
 
-Setiap task bisa punya **tanggal jatuh tempo**. Input date memakai `type="date"`; di browser akan muncul date picker (kalender) untuk pilih tanggal.
+Each task can have a **due date**. The date input uses `type="date"`; the browser shows a date picker (calendar) to choose the date.
 
 ![Date Picker](preview-datepicker.png)
-> *Date picker — pilih due date saat menambah atau mengatur task.*
+> *Date picker — choose due date when adding or editing a task.*
 
 ---
 
 ## 🛠 Tech Stack & Structure
 
-- **HTML5** — struktur semantic, form, filter, theme switcher.
-- **CSS3** — variables (`:root` + `[data-theme="..."]`), layout card, responsive.
-- **Vanilla JavaScript** — CRUD, filter, theme logic, localStorage (tanpa framework).
+- **HTML5** — semantic structure, form, filter, theme switcher.
+- **CSS3** — variables (`:root` + `[data-theme="..."]`), card layout, responsive.
+- **Vanilla JavaScript** — CRUD, filter, theme logic, localStorage (no framework).
 
-**Struktur file (sesuai constraint):**
+**File structure (per constraint):**
 
 ```
 todolist-web-app/
 ├── index.html      # Main UI (form, filter, theme select, task list)
 ├── css/
-│   └── style.css   # Semua style + 6 tema (satu file saja)
+│   └── style.css   # All styles + 6 themes (single file)
 ├── js/
-│   └── script.js   # Semua logic (theme, CRUD, filter, localStorage)
+│   └── script.js   # All logic (theme, CRUD, filter, localStorage)
 └── README.md
 ```
 
@@ -89,35 +89,35 @@ todolist-web-app/
 
 ## 🚀 How to Run
 
-1. Clone atau download repo ini.
-2. Buka di browser:
-   - **Via server (XAMPP):** letakkan di `htdocs`, lalu akses `http://localhost/todolist-web-app/`
-   - **Langsung:** buka file `index.html` (double-click atau drag ke browser).
-3. Tambah task, coba filter, ganti tema — pilihan tema dan daftar task akan tetap setelah refresh.
+1. Clone or download this repo.
+2. Open in a browser:
+   - **Via server (e.g. XAMPP):** put the folder in `htdocs`, then visit `http://localhost/todolist-web-app/`
+   - **Direct:** open `index.html` (double-click or drag into the browser).
+3. Add tasks, try filters, switch themes — your theme and task list will persist after refresh.
 
-Tidak perlu install dependency; cukup browser modern.
+No dependencies; a modern browser is enough.
 
 ---
 
 ## 📂 Repo Naming (GitHub)
 
-Saat push ke GitHub, nama repo disarankan mengikuti format:
+When pushing to GitHub, the repo name should follow this format:
 
 ```text
-CodingCamp-19Jan26-[NamaLengkapKamu]
+CodingCamp-19Jan26-[YourFullName]
 ```
 
-Ganti `[NamaLengkapKamu]` dengan nama kamu.
+Replace `[YourFullName]` with your name.
 
 ---
 
 ## 📋 Spec Reference (Original Brief)
 
-- **Constraint:** Hanya 3 file utama: `index.html`, `css/style.css`, `js/script.js`. Tidak ada file tambahan.
-- **Validation:** Task name wajib; kosong → tampil alert dan/atau pesan error di UI.
-- **Persistence:** Daftar task dan tema disimpan di `localStorage`.
-- **Theme:** Wajib pakai CSS Variables dan `data-theme` di body; semua tema dalam satu `style.css`.
+- **Constraint:** Only 3 main files: `index.html`, `css/style.css`, `js/script.js`. No extra files.
+- **Validation:** Task name is required; if empty → show alert and/or in-page error.
+- **Persistence:** Task list and theme are stored in `localStorage`.
+- **Theme:** Must use CSS Variables and `data-theme` on body; all themes in one `style.css`.
 
 ---
 
-Kalau mau nambah fitur atau ubah tema, tinggal edit `style.css` dan `script.js`. Semoga mantap pas di-up di GitHub. 🚀
+To add features or change themes, edit `style.css` and `script.js`. Enjoy. 🚀
