@@ -42,6 +42,27 @@ Semua tema diatur lewat **CSS Variables** dan atribut `data-theme` pada `<body>`
 | **RGB** | Border/gradient animasi, nuansa gaming. |
 | **Vintage** | Background sepia/beige, teks coklat, font serif/typewriter. |
 
+![Theme Switcher](preview-themes.png)
+> *Theme dropdown — pilih salah satu dari 6 tema (Minimalist, Cyberpunk, Dark, Light, RGB, Vintage).*
+
+---
+
+## 📋 Filter
+
+Dropdown filter untuk melihat task: **All**, **Completed**, **Uncompleted**, atau **Due Date** (urut berdasarkan tanggal terdekat).
+
+![Filter](preview-filter.png)
+> *Filter dropdown — opsi Due Date mengurutkan task berdasarkan tanggal jatuh tempo.*
+
+---
+
+## 📅 Due Date (dd/mm/yyyy)
+
+Setiap task bisa punya **tanggal jatuh tempo**. Input date memakai `type="date"`; di browser akan muncul date picker (kalender) untuk pilih tanggal.
+
+![Date Picker](preview-datepicker.png)
+> *Date picker — pilih due date saat menambah atau mengatur task.*
+
 ---
 
 ## 🛠 Tech Stack & Structure
